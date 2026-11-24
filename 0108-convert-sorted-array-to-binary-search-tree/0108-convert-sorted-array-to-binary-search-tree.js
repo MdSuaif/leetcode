@@ -17,7 +17,11 @@ var sortedArrayToBST = function(nums) {
 
     let mid = Math.floor(nums.length / 2)
 
-    let root = new TreeNode(nums[mid])
+    let root = {
+       val : nums[mid],
+       left : null,
+       right : null
+    }
 
     root.left = sortedArrayToBST(nums.slice(0,mid))
 
