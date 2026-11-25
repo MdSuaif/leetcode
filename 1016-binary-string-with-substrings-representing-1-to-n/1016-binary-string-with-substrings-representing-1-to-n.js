@@ -4,12 +4,13 @@
  * @return {boolean}
  */
 var queryString = function(s, n) {
-    for(let i = 1; i<=n; i++){
-        let binary = i.toString(2)
+   for(let i = 1; i<=n; i++){
 
-        if(!s.includes(binary)){
-            return false;
-        }
+    let binary = i.toString(2)
+
+    if(!s.includes(binary)){
+        return false;
     }
-    return true;
+   }
+   return true;
 };
